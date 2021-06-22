@@ -1,0 +1,80 @@
+
+
+#mm_container {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9899d6+1,5a5b9e+12,9899d6+87,323656+97,323656+97,1a192b+100 */
+    background: #3a6ca3; /* Old browsers - in b/w two colors */
+    background: -moz-linear-gradient(top, rgba(101,141,198,1) 1%, rgba(15,76,129,1) 7%, rgba(101,141,198,1) 93%, rgb(15,76,129,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(101,141,198,1) 1%,rgba(15,76,129,1) 7%,rgba(101,141,198,1) 93%,rgb(15,76,129,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(101,141,198,1) 1%,rgba(15,76,129,1) 7%,rgba(101,141,198,1) 93%, rgb(15,76,129,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#658dc6', endColorstr='#0f4c81',GradientType=0 ); /* IE6-9 */
+}
+
+#mainMenu {
+    width: 1000px;
+    height: 70px;
+    padding: 0px;
+    margin: 0 auto;
+} 
+
+#banner_logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    margin-top: 3px;
+}
+
+#banner_titles {
+    margin-top: 4px;
+}
+
+#mainMenu .leftHeader h6 {   
+    color: rgb(242, 214, 174);
+    line-height: .5;
+}
+
+#topBanner{
+    position: relative;
+    top: 32px;
+}
+
+#mainMenu .leftHeader {
+    width: 440px;
+    /* background-image: url("./line.png"); */
+    /* background-repeat: repeat-x; */
+}
+
+#mainMenu .middleHeader { 
+    width: 100px;
+    /* background-color: darkgray; */
+    /* background-image: url("./line.png"); */
+}
+
+#mainMenu .rightHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 460px;
+    /* background-image: url("./line.png"); */
+}
+
+/* HyperLinks - Right Menu only */
+#mainMenu .rightHeader a:link, a:visited {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    opacity: .85;
+    filter: alpha(opacity=50);  /* for IE8 and earlier */
+    cursor: pointer; 
+}
+
+#mainMenu .rightHeader a:hover, a:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.linkAdj {
+    position: relative;
+    top: 5px;
+    margin-left: auto;
+    color: rgb(8, 71, 95);
+}
