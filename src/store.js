@@ -1,6 +1,7 @@
-import { /* combineReducers, */ configureStore } from '@reduxjs/toolkit'
+import { configureStore, combineReducers, getDefaultMiddleware } from '@reduxjs/toolkit'
 // https://github.com/supasate/connected-react-router/blob/master/FAQ.md#how-to-migrate-from-v4-to-v5v6
-import { ConnectedRouter } from 'connected-react-router'
+import { ConnectedRouter, routerMiddleware } from 'connected-react-router'
+import { createBrowserHistory } from 'history'
 
 // REDUCERS
 import slideBulletsReducer from './reducers/slideBulletsReducer'
@@ -36,31 +37,64 @@ const defaultState = {
   slideControls
 }
 
+const history = createBrowserHistory() 
+
 /******************* CREATE ROOT REDUCER *******************/
 
 // Default combiner is fine unless Reducers are nested (or add history)
-const rootReducer = /* combineReducers( */{
+const rootReducer = (history: History) => combineReducers({
   slideInfo: slideInfoReducer,
   slideBullets: slideBulletsReducer,
   examQuestions: examQuestionsSlice,
   slideControls: slideControlsReducer,
   router: ConnectedRouter
-}/* ) */
+})
 /***************** END CREATE ROOT REDUCER *****************/
 
 // Get History Working thru Redux --> https://github.com/salvoravida/redux-first-history
 // Manual Store Setup --> https://redux-toolkit.js.org/usage/usage-guide
 const store = configureStore ({
-  reducer: rootReducer,
+  reducer: rootReducer(history),
+  middleware: [ routerMiddleware(history), ...getDefaultMiddleware(
+      {
+        thunk: {
+          extraArgument: false,
+          // extraArgument: false
+        },
+        immutableCheck: false,
+      },  
+    ), 
+  ],
   preloadedState: defaultState,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      thunk: {
-        extraArgument: false,
-      },
-      immutableCheck: false,
-  }),
 })
 
-// export {history}
+export {history}
 export default store
+
+/* Redux Toolkit Abstract
+
+type ConfigureEnhancersCallback = (
+  defaultEnhancers: StoreEnhancer[]
+) => StoreEnhancer[]
+
+interface ConfigureStoreOptions<
+  S = any,
+  A extends Actions = AnyAction,
+  M extends Middleware<S> = Middlewares<S>
+> {
+    reducer: Reducer<S, A> | ReducersMapObject<S, A>
+
+    middleware?: ((getDefaultMiddleware: CurriedDefaultMiddleware<S>) => M) | M
+
+    devTools?: boolean | DevToolsOptions
+
+    preloadedState?: DeepPartials<S extends any ? S : S>
+
+    enhancers?: StoreEnhancers[] | ConfigureEnhancersCallback
+  }
+
+function configureStore<S = any, A extends Action = AllAction>(
+  options: ConfigureStoreOptions<S, A>
+): EnhancedStore<S, A> 
+
+*/

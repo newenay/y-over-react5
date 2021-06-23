@@ -12,10 +12,10 @@ import 'bootstrap/dist/css/bootstrap.min.css' //main menu styles
 import './index.css'
 
 import App from './components/App'
-import {Route, HashRouter} from 'react-router-dom'
+import {Route, Router} from 'react-router-dom'
 
 import { Provider } from 'react-redux'
-import store/* , {history} */ from './store'
+import store, { history } from './store'
 /* import { ConnectedRouter } from 'react-router-redux' */
 
 //https://stackoverflow.com/questions/37550560/why-is-react-webpack-production-build-showing-blank-page
@@ -40,9 +40,9 @@ const AppRef = React.createRef();
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter basename='/' /* history={history}  getUserConfirmation={getConfirmation}*/ >
+    <Router basename='/'  history={history}  /*getUserConfirmation={getConfirmation}*/ >
       {/* <Route ref={AppRef} component={App} /> */}
       <Route ref={AppRef} render={(props) => <App {...props} />} />
-    </HashRouter>
+    </Router>
   </Provider>
   , document.getElementById('root'))

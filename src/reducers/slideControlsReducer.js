@@ -1,5 +1,8 @@
 
 // https://redux.js.org/recipes/structuring-reducers/refactoring-reducer-example#extracting-case-reducers
+
+// New - Toolkit method https://christopher-leja.medium.com/getting-started-with-redux-part-4-650e6b5f40cd
+
 function updateObject(oldObject, newValues) {
     return Object.assign({}, oldObject, newValues)
 }
