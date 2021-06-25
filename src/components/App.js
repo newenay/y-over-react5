@@ -3,6 +3,10 @@ import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
 import Main from './Main';
 
+/* const slideInfoBind = () => {
+    const {increment, rewind} = useSelector(state => state.slideInfo);
+} */
+
 function mapStateToProps(state) {
     return{
         slideInfo: state.slideInfo,
