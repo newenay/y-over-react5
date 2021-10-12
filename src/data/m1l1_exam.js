@@ -203,7 +203,7 @@ const examQuestions = {
             ]
         },
     ],    
-    "m1l1f32":[
+    "m1l1f34":[
         {
             elo: 2,
             question: "The report task begins with the recognition of an __________ event and ends when appropriate C2 authorities are informed.",
@@ -271,7 +271,7 @@ const examQuestions = {
             ]
         },
     ],    
-    "m1l1f34":[
+    "m1l1f36":[
         {
             elo: 1,
             question: "Personnel Recovery is the sum of  _________, _________, and ________ efforts to prepare for and execute the recovery and reintegration of isolated personnel.",

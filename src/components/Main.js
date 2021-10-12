@@ -28,6 +28,7 @@ class Main extends PureComponent {
     this.getBookmark= this.getBookmark.bind(this); 
     this.setBookmark= this.setBookmark.bind(this); 
     this.scoComplete= this.scoComplete.bind(this); 
+
   }
   
   /* URL Route Tracking -- turn on 'component', turn off 'render' below and will return url.  They cannot work together 
@@ -147,7 +148,11 @@ class Main extends PureComponent {
           <Switch>
             <Route 
               path={`${this.props.match.url}view/:slideId`} 
-              /* component={props => <Stage {...props} />} */
+              /* 
+                component={props => <Stage {...props} />} 
+                https://stackoverflow.com/questions/48150567/react-router-difference-between-component-and-render
+                using component has the effect of remounting the component each (also breaks the soundbar for excess loops)
+              */
               render={ ({match}) =>
               <Stage {...this.props}
                 ref={this.StageRef}

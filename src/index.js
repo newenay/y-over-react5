@@ -16,7 +16,6 @@ import {Route, Router} from 'react-router-dom'
 
 import { Provider } from 'react-redux'
 import store, { history } from './store'
-/* import { ConnectedRouter } from 'react-router-redux' */
 
 //https://stackoverflow.com/questions/37550560/why-is-react-webpack-production-build-showing-blank-page
 
@@ -31,7 +30,7 @@ const AppRef = React.createRef();
   //document.getElementById('stageContainer').innerHTML = resetSlideCues(); //.call
   //console.log('AppRef', AppRef);
   console.log(window.location.href, window.location.pathname)
-})
+}) */
 
 /* const getConfirmation = (message, callback) => {
   const allowTransition = window.confirm(message)
@@ -45,4 +44,5 @@ ReactDOM.render(
       <Route ref={AppRef} render={(props) => <App {...props} />} />
     </Router>
   </Provider>
-  , document.getElementById('root'))
+  , document.getElementById('root')
+  );

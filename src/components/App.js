@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import * as actionCreators from '../actions/actionCreators'
 import Main from './Main';
 
-/* const slideInfoBind = () => {
+/* 
+Example: Reducer Hook - https://www.smashingmagazine.com/2020/02/html-drag-drop-api-react/
+const slideInfoBind = () => {
     const {increment, rewind} = useSelector(state => state.slideInfo);
 } */
 
@@ -23,7 +25,7 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators(actionCreators, dispatch);   
 }
 
-// [HOC] High-Order Component -- sadds all actions, dispatch, and then calls Main to initialize
+// [HOC] High-Order Component -- adds all actions, dispatch, and then calls Main to initialize
 const App = connect( mapStateToProps, mapDispatchToProps )(Main);
 
 export default App;

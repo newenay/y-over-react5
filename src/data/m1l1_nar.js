@@ -25,7 +25,7 @@ const slideBullets = {
     {
       "graphic": '/images/m1l1/DOS_DOD_PR-d.png',
       "text":"Identify the DOD Personnel Recovery system",
-      "time": "17"
+      "time": "18"
     },
   ],
   "m1l1f03":[
@@ -116,7 +116,7 @@ const slideBullets = {
     {
       "graphic": '/images/m1l1/wholeOfGov-e.png',
       "text":"<b>Respond</b> - Create a whole-of-government approach to PR and overcome any capability shortfalls, including post isolation support activities",
-      "time": "116"
+      "time": "114"
     },
   ],
   "m1l1f06":[
@@ -363,16 +363,16 @@ const slideBullets = {
   "m1l1f16":[
     {
       "graphic": '/images/m1l1/Education_Training5-a.png',
-      "text":"Service and US Special Operations Command provide Service-specific education and training for their personnel",
+      "text":"Services and US Special Operations Command provide Service-specific education and training for their personnel",
       "time": "1"
     },
     {
-      "graphic": '/images/m1l1/Education_Training5-b.png',
+      "graphic": '/images/m1l1/Education_Training5-a.png',
       "text":"All Service-specific information adheres to the joint and interoperable standards",
       "time": "6"
     },
     {
-      "graphic": '/images/m1l1/Education_Training5-b.png',
+      "graphic": '/images/m1l1/Education_Training5-a.png',
       "text":"<SubTitle><b>Courses are available:</b>",
       "time": "15"
     },
@@ -410,17 +410,17 @@ const slideBullets = {
     },
     {
       "graphic": '/images/m1l1/PREdeployment_Training-c.jpg',
-      "text":"Address evolving conditions",
+      "text":false,
       "time": "14"
     },
     {
       "graphic": '/images/m1l1/PREdeployment_Training-d.jpg',
-      "text":"Prioritize attendance at JPRA formal PR training",
+      "text":false,
       "time": "17"
     },
     {
       "graphic": '/images/m1l1/PREdeployment_Training-e.jpg',
-      "text":"Track trained PR personnel using a skill identifier",
+      "text":"Operational environment determines scope of required training",
       "time": "19"
     },
   ],
@@ -766,27 +766,56 @@ const slideBullets = {
       "time": "1"
     },
     {
-      "graphic": '/images/m1l1/PR_Execution-a.png',
-      "text":"<b>Report:</b> Consists of actions required to provide notification that personnel are or may have become isolated",
-      "time": "10"
-    },
-    {
       "graphic": '/images/m1l1/PR_Execution-b.png',
-      "text":false,
-      "time": "16"
+      "text": false,
+      "time": "9"
     },
     {
       "graphic": '/images/m1l1/PR_Execution-c.png',
-      "text":"<b>Locate:</b> Involves finding the isolated personnel and then confirming their identity",
-      "time": "33"
+      "text":"Actions required to provide notification that personnel are or may have become isolated",
+      "time": "11"
     },
     {
       "graphic": '/images/m1l1/PR_Execution-d.png',
-      "text":"<b>Support:</b> Both the isolated person and isolated person’s next of kin",
-      "time": "69"
+      "text": "Ends when appropriate command and control authorities are informed",
+      "time": "21"
     },
   ],
   "m1l1f29":[
+    {
+      "graphic": '/images/m1l1/PR_Execution-e.png',
+      "text": false,
+      "time": "1"
+    },
+    {
+      "graphic": '/images/m1l1/PR_Execution-f.png',
+      "text": "Finding the isolated personnel",
+      "time": "2"
+    },
+    {
+      "graphic": '/images/m1l1/PR_Execution-g.png',
+      "text": "Confirming their identity",
+      "time": "4"
+    },
+  ],
+  "m1l1f30":[
+    {
+      "graphic": '/images/m1l1/PR_Execution-h.png',
+      "text": false,
+      "time": "1"
+    },
+    {
+      "graphic": '/images/m1l1/PR_Execution-i.png',
+      "text": "Isolated person",
+      "time": "3"
+    },
+    {
+      "graphic": '/images/m1l1/PR_Execution-j.png',
+      "text": "Isolated person’s next of kin",
+      "time": "4"
+    },
+  ],
+  "m1l1f31":[
     {
       "graphic": '/images/m1l1/PR_Execution2-a.png',
       "text": "Involves the coordinated actions and efforts of commanders and staffs, recovery forces, and isolated personnel",
@@ -813,7 +842,7 @@ const slideBullets = {
       "time": "39"
     },
   ],
-  "m1l1f30":[
+  "m1l1f32":[
     {
       "graphic": '/images/m1l1/reintegrate-a.png',
       "text":"Begins when the report notification is received",
@@ -840,7 +869,7 @@ const slideBullets = {
       "time": "52"
     },
   ],
-  "m1l1f31":[
+  "m1l1f33":[
     {
       "graphic": '/images/m1l1/Adapt-a.png',
       "text": false,
@@ -862,14 +891,14 @@ const slideBullets = {
       "time": "35"
     },
   ],
-  "m1l1f32":[
+  "m1l1f34":[
     {
       "graphic": false,
       "text":"Let's check on your learning.",
       "time": "1"
     },
   ],
-  "m1l1f33":[
+  "m1l1f35":[
     {
       "graphic": '/images/m1l1/DOS_DOD_PR-a.png',
       "text": false,
@@ -888,10 +917,10 @@ const slideBullets = {
     {
       "graphic": '/images/m1l1/DOS_DOD_PR-d.png',
       "text":"Identify the DOD Personnel Recovery system",
-      "time": "10"
+      "time": "11"
     },
   ],
-  "m1l1f34":[
+  "m1l1f36":[
     {
       "graphic": false,
       "text": false,

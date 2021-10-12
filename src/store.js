@@ -18,7 +18,7 @@ import examQuestions from './data/m1l1_exam'
 // App State
 const slideControls = {
 
-  debug: false, // turns on debugger and console traces (*also lesson menu - not active, but will switch lesson[])
+  debug: true, // turns on debugger and console traces (*also lesson menu - not active, but will switch lesson[])
   currentLesson: 0, // determines with lesson in lessons[] array (below)
   locked: false, // unlock course Nav -- for icon to show, debug must be true
   
