@@ -2,7 +2,7 @@ const lessons = [
     {
       id: 0,
       path: 'm1l1',
-      name: "Personnel Recovery",
+      name: "Die Brücke (The Bridge)",
       currentSlide: 0,
       bookmark: 0,
       completed: false
@@ -10,12 +10,12 @@ const lessons = [
     {
       id: 1,
       path: 'm2l1',
-      name: "Joint Operations",
+      name: "The Impressionists",
       currentSlide: 0,
       bookmark: 0,
       completed: false
     },
-    {
+    /*{
       id: 2,
       path: 'm3l1',
       name: "Command & Control",
@@ -78,6 +78,6 @@ const lessons = [
       currentSlide: 0,
       bookmark: 0,
       completed: false
-    },
+    },*/
   ]
   export default lessons;
