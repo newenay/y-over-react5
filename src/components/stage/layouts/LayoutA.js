@@ -1,6 +1,6 @@
 import React from 'react';
-import PictureViewer from './stageCommon/PictureViewer'
-import Bullets from './stageCommon/Bullets'
+import PictureViewer from './stageCommon/PictureViewer.js'
+import Bullets from './stageCommon/Bullets.js'
 import './stageStylz/LayoutA.css';
 
 const LayoutA = (props) => {

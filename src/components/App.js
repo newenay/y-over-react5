@@ -1,7 +1,7 @@
 import { bindActionCreators } from '@reduxjs/toolkit'
 import { connect } from 'react-redux'
-import * as actionCreators from '../actions/actionCreators'
-import Main from './Main';
+import * as actionCreators from '../actions/actionCreators.js'
+import Main from './Main.js';
 
 /* 
 Example: Reducer Hook - https://www.smashingmagazine.com/2020/02/html-drag-drop-api-react/

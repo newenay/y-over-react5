@@ -1,12 +1,12 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types';
-import LayoutA from './layouts/LayoutA';
-import LayoutB from './layouts/LayoutB';
-import LayoutC from './layouts/LayoutC';
-import LayoutKC from './layouts/LayoutKC';
-import AudioPlayer from './utilities/AudioPlayer';
+import LayoutA from './layouts/LayoutA.js';
+import LayoutB from './layouts/LayoutB.js';
+import LayoutC from './layouts/LayoutC.js';
+import LayoutKC from './layouts/LayoutKC.js';
+import AudioPlayer from './utilities/AudioPlayer.js';
 /* import ErrorBoundary from './utilities/ErrorBoundary' */
-import Popup from './utilities/Popup';
+import Popup from './utilities/Popup.js';
 import './Stage.css';
 
 class Stage extends PureComponent {

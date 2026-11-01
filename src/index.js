@@ -1,5 +1,5 @@
-import 'react-app-polyfill/ie11'
-import 'react-app-polyfill/stable'
+import 'react-app-polyfill/ie11.js'
+import 'react-app-polyfill/stable.js'
 // SCRIPT1003: Create React App and IE11 giving me headaches! https://medium.com/@_meandmax_/react-16-cra-and-ie11-giving-me-headaches-c8be43b4fcb2
 // https://reactjs.org/docs/javascript-environment-requirements.html
 //import 'core-js/stable'
@@ -11,11 +11,11 @@ import ReactDOM from "react-dom"
 import 'bootstrap/dist/css/bootstrap.min.css' //main menu styles
 import './index.css'
 
-import App from './components/App'
+import App from './components/App.js'
 import {Route, Router} from 'react-router-dom'
 
 import { Provider } from 'react-redux'
-import store, { history } from './store'
+import store, { history } from './store.js'
 
 //https://stackoverflow.com/questions/37550560/why-is-react-webpack-production-build-showing-blank-page
 

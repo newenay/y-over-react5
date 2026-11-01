@@ -1,8 +1,8 @@
 import React from 'react'
 import './PictureViewer.css'
-import CrossFadeImage from './CrossFadeImage' 
+import CrossFadeImage from './CrossFadeImage.js' 
 import '../../utilities/loader.css'
-import FlashObject from './FlashObject'
+import FlashObject from './FlashObject.js'
 
 const PictureViewer = (props) => {
   

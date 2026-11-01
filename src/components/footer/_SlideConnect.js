@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import SlideControls from "./SlideControls";
+import SlideControls from "./SlideControls.js";
 
 // Map Redux state to Component props
 function mapStateToProps(state) {

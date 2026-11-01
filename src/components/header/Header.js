@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 //import { Container, Row, Col, /*Breadcrumb, BreadcrumbItem*/ } from "reactstrap";
-import MainMenu from "./MainMenu";
+import MainMenu from "./MainMenu.js";
 import './Header.css';
 
 const Header = (props) => {
