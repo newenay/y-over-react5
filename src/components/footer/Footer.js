@@ -1,6 +1,6 @@
 import React from "react";
-import SlideNav from "./SlideNav";
-import SlideMenu from './SlideMenu';
+import SlideNav from "./SlideNav.js";
+import SlideMenu from './SlideMenu.js';
 import './Footer.css';
 
 const Footer = (props) => {

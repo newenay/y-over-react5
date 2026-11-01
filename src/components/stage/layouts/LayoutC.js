@@ -1,5 +1,5 @@
 import React from 'react';
-import PictureViewer from './stageCommon/PictureViewer'
+import PictureViewer from './stageCommon/PictureViewer.js'
 import './stageStylz/LayoutFull.css';
 
 const LayoutC = (props) => {

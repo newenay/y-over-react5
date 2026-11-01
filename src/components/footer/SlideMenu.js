@@ -1,5 +1,5 @@
 import React from 'react'
-import SlideBtn from './SlideBtn'
+import SlideBtn from './SlideBtn.js'
 
 const SlideMenu = (props) => {
    

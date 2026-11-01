@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
-import Exam from './exam_qcs/Exam';
-import Result from './exam_qcs/Result';
+import Exam from './exam_qcs/Exam.js';
+import Result from './exam_qcs/Result.js';
 /* import examQuestions from '../../../data/m2l1_exam'; */
 import './stageStylz/LayoutFull.css';
 import './exam_qcs/Exam.css';

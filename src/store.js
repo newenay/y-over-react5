@@ -4,16 +4,16 @@ import { ConnectedRouter, routerMiddleware } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
 
 // REDUCERS
-import slideBulletsReducer from './reducers/slideBulletsReducer'
-import slideInfoReducer from './reducers/slideInfoReducer'
-import examQuestionsSlice from './reducers/examQuestionsSlice' //does not seem to have an action?
-import slideControlsReducer from './reducers/slideControlsReducer'
+import slideBulletsReducer from './reducers/slideBulletsReducer.js'
+import slideInfoReducer from './reducers/slideInfoReducer.js'
+import examQuestionsSlice from './reducers/examQuestionsSlice.js'
+import slideControlsReducer from './reducers/slideControlsReducer.js'
 
 /* import lessonSwap from './data/course_info' --> Menu system, NOT YET FUNCTIONAL */
-import lessons from './data/lessons' 
-import slideBullets from './data/m1l1_nar'
-import slideInfo from './data/m1l1_info'
-import examQuestions from './data/m1l1_exam'
+import lessons from './data/lessons.js' 
+import slideBullets from './data/m1l1_nar.js'
+import slideInfo from './data/m1l1_info.js'
+import examQuestions from './data/m1l1_exam.js'
 
 // App State
 const slideControls = {

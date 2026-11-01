@@ -1,8 +1,8 @@
 import React from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Question from './Question';
-import QuestionCount from './QuestionCount';
-import AnswerOption from './AnswerOption';
+import Question from './Question.js';
+import QuestionCount from './QuestionCount.js';
+import AnswerOption from './AnswerOption.js';
 
 /* Polyfill --> https://github.com/reactjs/react-transition-group/blob/master/Migration.md */
 const TransitionFade = (props) => (

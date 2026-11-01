@@ -1,12 +1,12 @@
 import React, {PureComponent} from 'react';
 // Brand new Tyler React-Router 4 explanation - https://tylermcginnis.com/react-router-url-parameters/
 import {Route, Switch} from 'react-router-dom';
-import Header from './header/Header';
-import Stage from './stage/Stage';
-import PlaceHolder from './stage/PlaceHolder';
-import Help from './stage/Help';
-import Footer from './footer/Footer';
-import Debugger from './Debugger';
+import Header from './header/Header.js';
+import Stage from './stage/Stage.js';
+import PlaceHolder from './stage/PlaceHolder.js';
+import Help from './stage/Help.js';
+import Footer from './footer/Footer.js';
+import Debugger from './Debugger.js';
 
 //(Context depreciated) why do some props flow through with const that don't with class?? 
 // Answer: const reduces lots boilerplate (such as declaring a var, and having it avail to
